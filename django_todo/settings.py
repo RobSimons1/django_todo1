@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
                  os.environ.get('HOSTNAME'), 
-                 os.environ.get('simple-django-todo101.herokuapp.com')]
+                 ('simple-django-todo101.herokuapp.com')]
 
 
 # Application definition
