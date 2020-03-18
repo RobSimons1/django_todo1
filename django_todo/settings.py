@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import env
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', "Env value not loaded")
 import dj_database_url
+
 
 if os.environ.get('DEVELOPMENT'):
     development = True
